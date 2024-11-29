@@ -194,7 +194,7 @@ class OrmExtension extends CompilerExtension
 			]);
 	}
 
-	protected function initializeMetadata(ClassType $classType, bool $init)
+	protected function initializeMetadata(ClassType $classType, bool $init): void
 	{
 		if (!$init) {
 			return;

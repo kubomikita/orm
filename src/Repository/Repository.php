@@ -435,6 +435,11 @@ abstract class Repository implements IRepository
 	}
 
 
+	public function getIdentityMap(): IdentityMap
+	{
+		return $this->identityMap;
+	}
+
 	/** {@inheritdoc} */
 	public function remove(IEntity $entity, bool $withCascade = true): IEntity
 	{
